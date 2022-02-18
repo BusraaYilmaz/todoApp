@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Note from "./Note";
+import NoteA from "../Mui/NoteA";
 
 const Notes = (props) => {
   return (
@@ -9,7 +9,7 @@ const Notes = (props) => {
         {props.notes.map((item) => {
           return (
             <Col md={10} key={item.id}>
-              <Note id={item.id} note={item.note} deletee={props.deletee} />
+              <NoteA id={item.id} note={item.note} deletee={props.deletee} />
             </Col>
           );
         })}

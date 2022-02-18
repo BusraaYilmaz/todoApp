@@ -1,21 +1,19 @@
 import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 
-const NoteForm = (props) => {
+const NoteFormA = (props) => {
   const [note, setNote] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const newNote = {
       id: Date.now(),
       note: note,
     };
-
     props.ekle(newNote);
     setNote("");
   };
   return (
-    <div style={{ backgroundColor: "#efefef", padding: "5rem" }}>
+    <div style={{ backgroundColor: "#efefef", padding: "3rem" }}>
       <form onSubmit={handleSubmit}>
         <TextField
           required
@@ -38,4 +36,4 @@ const NoteForm = (props) => {
     </div>
   );
 };
-export default NoteForm;
+export default NoteFormA;
