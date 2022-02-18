@@ -5,10 +5,10 @@ import Note from "./Note";
 const Notes = (props) => {
   return (
     <Container>
-      <Row className="g-4">
+      <Row>
         {props.notes.map((item) => {
           return (
-            <Col md={4} key={item.id}>
+            <Col md={6} key={item.id}>
               <Note id={item.id} note={item.note} deletee={props.deletee} />
             </Col>
           );

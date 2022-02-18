@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import Notes from "./Notes";
 
 const NoteForm = (props) => {
   const [note, setNote] = useState("");
@@ -16,9 +17,11 @@ const NoteForm = (props) => {
   };
 
   return (
-    <div style={{ backgroundColor: "#efefef", padding: "1rem" }}>
+    <div
+      style={{ backgroundColor: "#efefef", padding: "1rem", marginTop: "1rem" }}
+    >
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
+        <Form.Group>
           <Form.Label> Create new Todo</Form.Label>
           <Form.Control
             type="text"
