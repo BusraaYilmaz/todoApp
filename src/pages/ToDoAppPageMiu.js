@@ -1,10 +1,11 @@
 import React from "react";
 import ToDoApp from "../components/TodoApp";
+import NoteA from "../components/NoteA";
 
 const TodoAppPage = () => {
   return (
     <div>
-      <ToDoAppA />
+      <NoteA />
     </div>
   );
 };

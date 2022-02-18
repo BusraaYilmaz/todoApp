@@ -17,10 +17,10 @@ const ToDoApp = () => {
   return (
     <Container>
       <Row>
-        <Col md={12}>
+        <Col md={6}>
           <NoteForm ekle={ekle} />
         </Col>
-        <Col md={4}>
+        <Col md={6}>
           <Notes notes={notes} deletee={deletee} />
         </Col>
       </Row>

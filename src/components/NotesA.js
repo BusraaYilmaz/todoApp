@@ -9,7 +9,7 @@ import Radio from "@mui/material/Radio";
 import Paper from "@mui/material/Paper";
 import { Container } from "react-bootstrap";
 
-export default function SpacingGrid() {
+export default function SpacingGrid(props) {
   return (
     <Box sx={{ width: "100%" }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>

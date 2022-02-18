@@ -1,26 +1,34 @@
-import * as React from "react";
+import React from "react";
+// import { Card, Button } from "react-bootstrap";
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function NoteA(props) {
+const Note = (props) => {
   const { id, note, deletee } = props;
 
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          <Card.Title>{note}</Card.Title>
-        </Typography>
-      </CardContent>
+    <Box sx={{ minWidth: 275 }}>
+      <Card variant="outlined">
+        <CardContent>
+          <Typography variant="body2">{note}</Typography>
+        </CardContent>
 
-      <CardActions>
-        <Button variant="danger" onClick={() => deletee(id)}>
-          Delete
-        </Button>
-      </CardActions>
-    </Card>
+        <CardActions>
+          <Button
+            size="small"
+            variant="outlined"
+            color="error"
+            onClick={() => deletee(id)}
+          >
+            Delete
+          </Button>
+        </CardActions>
+      </Card>
+    </Box>
   );
-}
+};
+export default Note;

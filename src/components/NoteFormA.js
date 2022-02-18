@@ -1,24 +1,12 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import Notes from "./Notes";
+import FormGroup from "@mui/material/FormGroup";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
-const NoteForm = (props) => {
-  const [note, setNote] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newApp = {
-      id: Date.now(),
-      note: note,
-    };
-
-    props.ekle(newApp);
-    setNote("");
-  };
-
+export default function NoteForm(props) {
   return (
     <div
-      style={{ backgroundColor: "#efefef", padding: "1rem", margin: "1rem" }}
+      style={{ backgroundColor: "#efefef", padding: "1rem", marginTop: "1rem" }}
     >
       <Form onSubmit={handleSubmit}>
         <Form.Group>
@@ -30,12 +18,11 @@ const NoteForm = (props) => {
           />
         </Form.Group>
 
+        <Button variant="contained">Contained</Button>
         <Button variant="warning" type="submit">
           Ekle
         </Button>
       </Form>
     </div>
   );
-};
-
-export default NoteForm;
+}
