@@ -1,13 +1,5 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import FormLabel from "@mui/material/FormLabel";
-import FormControl from "@mui/material/FormControl";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import HighlightedCode from "docs/src/modules/components/HighlightedCode";
-import RadioGroup from "@mui/material/RadioGroup";
-import Radio from "@mui/material/Radio";
-import Paper from "@mui/material/Paper";
-import { Container } from "react-bootstrap";
 
 export default function SpacingGrid(props) {
   return (
