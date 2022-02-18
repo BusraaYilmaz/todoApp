@@ -7,12 +7,13 @@ import TodoAppPageMiu from "./pages/ToDoAppPageMiu";
 
 const App = () => {
   return (
-    <StoreContext.Provider>
+    <BrowserRouter>
       <Router>
         <Route path="/bootstrap" element={<TodoAppPage />} />
         <Route path="/miu" element={<TodoAppPageMiu />} />
       </Router>
-    </StoreContext.Provider>
+    </BrowserRouter>
+
     // <div>
     //   <TodoAppPage />
     // </div>

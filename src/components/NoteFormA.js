@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormGroup from "@mui/material/FormGroup";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { FormControlLabel } from "@mui/material";
 
 export default function NoteForm(props) {
   return (
@@ -11,7 +12,7 @@ export default function NoteForm(props) {
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label> Create new Todo</Form.Label>
-          <Form.Control
+          <Form.FormControlLabel
             type="text"
             value={note}
             onChange={(e) => setNote(e.target.value)}
