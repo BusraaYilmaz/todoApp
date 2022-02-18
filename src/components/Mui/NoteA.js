@@ -1,4 +1,5 @@
 import React from "react";
+
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -9,7 +10,7 @@ import Typography from "@mui/material/Typography";
 const NoteA = (props) => {
   const { id, note, deletee } = props;
   return (
-    <Box sx={{ minWidth: 275 }}>
+    <Box sx={{ minWidth: 275, padding: "2rem" }}>
       <Card variant="outlined">
         <CardContent>
           <Typography variant="body2">{note}</Typography>
