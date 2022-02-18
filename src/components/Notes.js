@@ -8,7 +8,7 @@ const Notes = (props) => {
       <Row>
         {props.notes.map((item) => {
           return (
-            <Col md={6} key={item.id}>
+            <Col md={10} key={item.id}>
               <Note id={item.id} note={item.note} deletee={props.deletee} />
             </Col>
           );

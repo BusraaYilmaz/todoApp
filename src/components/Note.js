@@ -1,20 +1,23 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 
 const Note = (props) => {
   const { id, note, deletee } = props;
 
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title>{note}</Card.Title>
-      </Card.Body>
-      <Card.Footer>
-        <Button className="buttonDelete" onClick={() => deletee(id)}>
-          Delete
-        </Button>
-      </Card.Footer>
-    </Card>
+    <Container>
+      <Card>
+        <Card.Body>
+          <Card.Title>{note}</Card.Title>
+        </Card.Body>
+
+        <Card.Footer>
+          <Button onClick={() => deletee(id)} variant="danger">
+            Delete
+          </Button>
+        </Card.Footer>
+      </Card>
+    </Container>
   );
 };
 

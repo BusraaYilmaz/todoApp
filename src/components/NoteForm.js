@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import Notes from "./Notes";
+import { Form, Button, Container } from "react-bootstrap";
 
 const NoteForm = (props) => {
   const [note, setNote] = useState("");
@@ -17,7 +16,7 @@ const NoteForm = (props) => {
   };
 
   return (
-    <div
+    <Container
       style={{ backgroundColor: "#efefef", padding: "1rem", margin: "1rem" }}
     >
       <Form onSubmit={handleSubmit}>
@@ -34,7 +33,7 @@ const NoteForm = (props) => {
           Ekle
         </Button>
       </Form>
-    </div>
+    </Container>
   );
 };
 

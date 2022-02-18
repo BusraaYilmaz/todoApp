@@ -9,6 +9,7 @@ const ToDoApp = () => {
   const ekle = (note) => {
     setNotes([note, ...notes]);
   };
+
   const deletee = (id) => {
     const yeniDizi = notes.filter((note) => note.id != id);
     setNotes(yeniDizi);

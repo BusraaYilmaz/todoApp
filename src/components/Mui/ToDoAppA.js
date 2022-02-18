@@ -1,6 +1,8 @@
 import Box from "@mui/material/Box";
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
+import NoteFormA from "./NoteFormA";
+import NoteA from "./NoteA";
 
 const ToDoAppA = () => {
   const [notes, setNotes] = useState([]);
@@ -17,14 +19,12 @@ const ToDoAppA = () => {
     <Box sx={{ width: "100%" }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={6}>
-          <Item>
-            <Grid>
-              <NoteForm ekle={ekle} />
-            </Grid>
-            <Grid>
-              <Note notes={notes} deletee={deletee} />
-            </Grid>
-          </Item>
+          <Grid>
+            <NoteFormA ekle={ekle} />
+          </Grid>
+          <Grid>
+            <NoteA notes={notes} deletee={deletee} />
+          </Grid>
         </Grid>
       </Grid>
     </Box>

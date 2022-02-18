@@ -1,5 +1,6 @@
 import * as React from "react";
 import Grid from "@mui/material/Grid";
+import NoteA from "../Mui/NoteA";
 
 export default function SpacingGrid(props) {
   return (
@@ -10,7 +11,11 @@ export default function SpacingGrid(props) {
             {props.notes.map((item) => {
               return (
                 <Grid>
-                  <Note id={item.id} note={item.note} deletee={props.deletee} />
+                  <NoteA
+                    id={item.id}
+                    note={item.note}
+                    deletee={props.deletee}
+                  />
                 </Grid>
               );
             })}

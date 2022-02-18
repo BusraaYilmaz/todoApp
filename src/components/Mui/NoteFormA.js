@@ -10,6 +10,7 @@ const NoteForm = (props) => {
       id: Date.now(),
       note: note,
     };
+
     props.ekle(newNote);
     setNote("");
   };
