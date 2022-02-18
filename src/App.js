@@ -7,16 +7,17 @@ import TodoAppPageMiu from "./pages/ToDoAppPageMiu";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Router>
-        <Route path="/bootstrap" element={<TodoAppPage />} />
-        <Route path="/miu" element={<TodoAppPageMiu />} />
-      </Router>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Router>
+    //     <Route path="/bootstrap" element={<TodoAppPage />} />
+    //     <Route path="/miu" element={<TodoAppPageMiu />} />
+    //   </Router>
+    // </BrowserRouter>
 
-    // <div>
-    //   <TodoAppPage />
-    // </div>
+    <div>
+      {/* <TodoAppPage /> */}
+      <TodoAppPageMiu />
+    </div>
   );
 };
 
